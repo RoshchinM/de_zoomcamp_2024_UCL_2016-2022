@@ -39,10 +39,12 @@ In google cloud console - create a new GCP project by clicking New Project butto
 ![New project](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/1_create_project.png)
 
 Create all resources for project - BigQuery, Cloud Storage and Service Account
+
 [Bucket](https://console.cloud.google.com/storage/browser)
 ![bucket](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/2_bucket.png)
 
-[Bucket](https://console.cloud.google.com/iam-admin)
+
+[IAM](https://console.cloud.google.com/iam-admin)
 ![service_account](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/3_service_acc.png)
 
 ### 3) Mage
