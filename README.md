@@ -63,15 +63,22 @@ docker compose up
 
 Now, navigate to http://localhost:6789 in your browser! You can see Mage
 
+Add GCP credentials location in io_config.yaml 
+![gcp](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/5_GCP_cred.png)
 
 Create 6 separate pipelines with Load Transform Export 
 
-###![pipeline](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/4_LTE_schema.png)
-
-Add GCP credentials location in io_config.yaml 
-###![gcp](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/5_GCP_cred.png)
+![pipeline](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/4_LTE_schema.png)
 
 Mage pipelines code 
 [Mage pipelines code](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/mage_pipelines.md)
 
+After pipilines run data will be available in GCP storage
+ ![pipeline](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/6_GCP_data.png)
+
+Add triggers to start pipelines with refresh data on monthly basis
+ ![pipeline](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/7_triggers.png)
+
+Final active pipiles in Mage 
+![pipeline](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/8_mage_pipelines.png
 
