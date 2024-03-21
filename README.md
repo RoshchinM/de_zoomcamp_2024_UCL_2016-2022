@@ -73,12 +73,33 @@ Create 6 separate pipelines with Load Transform Export
 Mage pipelines code 
 [Mage pipelines code](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/mage_pipelines.md)
 
-After pipilines run data will be available in GCP storage
- ![pipeline](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/6_GCP_data.png)
-
 Add triggers to start pipelines with refresh data on monthly basis
  ![pipeline](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/7_triggers.png)
 
 Final active pipiles in Mage 
-![pipeline](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/8_mage_pipelines.png
+![pipeline](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/8_mage_pipelines.png)
 
+
+### 4) Google Cloud Storage
+
+After pipilines run data will be available in GCP storage
+ ![pipeline](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/6_GCP_data.png)
+
+And need to create external tables from this parquets in buckets
+ ![ext_tables](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/9_external_table.png)
+
+ From external table create materialized view 
+
+```
+CREATE TABLE `UCL.teams_native`
+AS
+SELECT *
+FROM `zoomcamp-ucl-data-mr.UCL.teams_external`;
+```
+```
+CREATE MATERIALIZED VIEW `UCL.teams_materialized`
+AS
+SELECT *
+FROM `UCL.teams_native`;
+```
+![mat_view](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/10_materialized_view.png)
