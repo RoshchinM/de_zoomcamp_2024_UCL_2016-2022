@@ -111,6 +111,14 @@ FROM `UCL.teams_native`;
 Go to https://www.getdbt.com/ and creates a free account. After creating your account you need to create your project following the instructions:
 
 1. Choose a name in Name your project option.
-![mat_view](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/11_dbt_create.png)
+![dbt_create](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/11_dbt_create.png)
 
 2. In Choose a connection, select BigQuery.
+add github connection
+create dev, prod enviroments
+
+3. Run cloud IDE. Click initialize DBT project 
+![dbt_proj](12_cloudIDE.png)
+
+4. Plan all transformations https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/dbt_cloud/README.md
+
