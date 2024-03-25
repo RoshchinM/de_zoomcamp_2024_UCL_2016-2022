@@ -47,6 +47,8 @@ Create all resources for project - BigQuery, Cloud Storage and Service Account
 [IAM](https://console.cloud.google.com/iam-admin)
 ![service_account](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/3_service_acc.png)
 
+Download JSON with credentials to project folder
+
 ### 3) Mage
 
 ```
@@ -103,3 +105,5 @@ SELECT *
 FROM `UCL.teams_native`;
 ```
 ![mat_view](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/10_materialized_view.png)
+
+### 5) DBT cloud
