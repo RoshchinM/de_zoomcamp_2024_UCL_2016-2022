@@ -118,7 +118,12 @@ add github connection
 create dev, prod enviroments
 
 3. Run cloud IDE. Click initialize DBT project 
-![dbt_proj](12_cloudIDE.png)
+![dbt_proj](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/12_cloudIDE.png)
 
-4. Plan all transformations https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/dbt_cloud/README.md
+4. Plan all transformations 
+[Transformations plan](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/dbt_cloud/README.md)
+[Transformations models](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/dbt_cloud)
+
+
+
 
