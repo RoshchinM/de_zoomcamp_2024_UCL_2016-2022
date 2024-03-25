@@ -1,15 +1,15 @@
-Welcome to your new dbt project!
+Transformation plan: 
 
-### Using the starter project
+Transformation:
+###combine all 3 models in 1 with joins
+SELECT * FROM `zoomcamp-ucl-data-mr.UCL.teams_materialized` 
+SELECT * FROM `zoomcamp-ucl-data-mr.UCL.stadiums_materialized` 
+SELECT * FROM `zoomcamp-ucl-data-mr.UCL.managers_materialized` 
 
-Try running the following commands:
-- dbt run
-- dbt test
 
+SELECT * FROM `zoomcamp-ucl-data-mr.UCL.matches_materialized` 
+###add winner column and attendance % from capacity (join capacity from stadiums)
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](https://getdbt.com/community) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+SELECT * FROM `zoomcamp-ucl-data-mr.UCL.goals_materialized` 
+SELECT * FROM `zoomcamp-ucl-data-mr.UCL.players_materialized` 
+### add players total goals and assists leaderboard

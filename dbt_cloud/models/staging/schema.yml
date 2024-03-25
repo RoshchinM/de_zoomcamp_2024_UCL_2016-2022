@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: staging
+    database: zoomcamp-ucl-data-mr
+    schema: UCL
+
+    tables:
+      - name: goals_materialized
+      - name: managers_materialized
+      - name: matches_materialized
+      - name: players_materialized
+      - name: stadiums_materialized
+      - name: teams_materialized
+
+      
+
