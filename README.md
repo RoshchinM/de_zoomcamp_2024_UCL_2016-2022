@@ -107,3 +107,10 @@ FROM `UCL.teams_native`;
 ![mat_view](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/10_materialized_view.png)
 
 ### 5) DBT cloud
+
+Go to https://www.getdbt.com/ and creates a free account. After creating your account you need to create your project following the instructions:
+
+1. Choose a name in Name your project option.
+![mat_view](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/11_dbt_create.png)
+
+2. In Choose a connection, select BigQuery.
