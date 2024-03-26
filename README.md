@@ -13,18 +13,18 @@ To develop a comprehensive dashboard solution that provides users with updated a
 # Technologies
 In this project I mostly used the tools that I learned from Data-Eng-zoomcamp-2024
 
-1) Mage for data orchestration
-2) Google Cloud Storage - datalake to store raw dataset in buckets
-3) Google BigQuery - data warehouse.
-4) Dbt cloud - for developing Analytical Views 
-5) Google Compute Engine as the virtual host to host our data pipeline ?
+1) Google Cloud Storage - datalake to store raw dataset in buckets
+2) Mage for data orchestration
+3) Terraform
+4) Google BigQuery - data warehouse.
+5) Dbt cloud - for developing Analytical Views 
 6) Looker - visualization dashboard with main metrics that will helps to find ingsights from data
 
 
 ## Installation and Setup
 To set up the project, follow the detailed installation and configuration instructions provided below. The guide will walk you through the necessary steps, including the installation of required dependencies and the configuration of GCP services.
 
-### 1) Clone the repo and move to the repo directory to use the Makefile
+Clone the repo and move to the repo directory to use the Makefile
 ```
 git clone https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022
 ```
@@ -33,7 +33,7 @@ git clone https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022
 cd de_zoomcamp_2024_UCL_2016-2022
 ```
 
-### 2) GCP 
+### 1) GCP 
 
 In google cloud console - create a new GCP project by clicking New Project button.
 ![New project](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/1_create_project.png)
@@ -49,7 +49,7 @@ Create all resources for project - BigQuery, Cloud Storage and Service Account
 
 Download JSON with credentials to project folder
 
-### 3) Mage
+### 2) Mage
 
 ```
 cd mage-orchestration
@@ -81,8 +81,9 @@ Add triggers to start pipelines with refresh data on monthly basis
 Final active pipiles in Mage 
 ![pipeline](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/8_mage_pipelines.png)
 
+### 3) Terraform
 
-### 4) Google Cloud Storage
+### 4) Google Cloud Storage/Big query
 
 After pipilines run data will be available in GCP storage
  ![pipeline](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/6_GCP_data.png)
@@ -126,4 +127,5 @@ create dev, prod enviroments
 [dbt docs](https://cloud.getdbt.com/accounts/254522/develop/6118890/docs/index.html#!/source_list/staging)
 ![dbt_schema](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/13_dbt_schema.png)
 
+### 6) Looker
 
