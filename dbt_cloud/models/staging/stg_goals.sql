@@ -22,7 +22,7 @@ renamed as (
     {{ dbt.safe_cast("assist", api.Column.translate_type("text")) }} as assist,
     {{ dbt.safe_cast("goal_desc", api.Column.translate_type("text")) }} as goal_desc
 FROM source
-
+Where pid is not null
 
 )
 

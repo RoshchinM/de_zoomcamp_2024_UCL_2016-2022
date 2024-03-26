@@ -10,6 +10,10 @@ renamed as (
 
     select
         {{ dbt.safe_cast("player_id", api.Column.translate_type("text")) }} as player_id,
+COALESCE(
+    CONCAT({{ dbt.safe_cast("first_name", api.Column.translate_type("text")) }}, ' ', {{ dbt.safe_cast("last_name", api.Column.translate_type("text")) }}),
+    {{ dbt.safe_cast("last_name", api.Column.translate_type("text")) }}
+) AS full_name,
         {{ dbt.safe_cast("first_name", api.Column.translate_type("text")) }} as first_name,
         {{ dbt.safe_cast("last_name", api.Column.translate_type("text")) }} as last_name,
         {{ dbt.safe_cast("nationality", api.Column.translate_type("text")) }} as nationality,
