@@ -120,10 +120,10 @@ create dev, prod enviroments
 3. Run cloud IDE. Click initialize DBT project 
 ![dbt_proj](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/12_cloudIDE.png)
 
-4. Plan all transformations 
+4. Plan and execute all transformations 
 [Transformations plan](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/dbt_cloud/README.md)
 [Transformations models](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/dbt_cloud)
-
-
+[dbt docs](https://cloud.getdbt.com/accounts/254522/develop/6118890/docs/index.html#!/source_list/staging)
+![dbt_schema](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/13_dbt_schema.png)
 
 
