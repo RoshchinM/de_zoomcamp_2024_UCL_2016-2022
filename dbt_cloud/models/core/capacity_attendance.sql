@@ -20,4 +20,4 @@ JOIN
 GROUP BY 
     fteams.home_stadium, fteams.stadium_city, fteams.team_country
 ORDER BY 
-    total_matches DESC, avg_attendance DESC
+    avg_attendance DESC, total_matches DESC
