@@ -116,20 +116,27 @@ FROM `UCL.teams_native`;
 Go to https://www.getdbt.com/ and creates a free account. After creating your account you need to create your project following the instructions:
 
 1. Choose a name in Name your project option.
+
 ![dbt_create](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/11_dbt_create.png)
 
-2. In Choose a connection, select BigQuery.
-add github connection
-create dev, prod enviroments
+2. In Choose a connection, select BigQuery, add github connection, create dev, prod enviroments
 
 3. Run cloud IDE. Click initialize DBT project 
+
 ![dbt_proj](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/12_cloudIDE.png)
 
 4. Plan and execute all transformations 
+
 [Transformations plan](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/dbt_cloud/README.md)
+
 [Transformations models](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/dbt_cloud)
+
 [dbt docs](https://cloud.getdbt.com/accounts/254522/develop/6118890/docs/index.html#!/source_list/staging)
+Final dbt schema
+
 ![dbt_schema](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/13_dbt_schema.png)
+Succesfull dbt run
+
 ![dbt_run](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/14_dbt_run.png)
 ### 6) Looker
 
