@@ -181,7 +181,8 @@ models:
         description: ""
 
 - name: top_scorers_assistens
-    description: "list with top scores and assistens info"
+    description: >
+      list with top scores and assistens info
     columns:
       - name: player
         data_type: string
@@ -208,7 +209,8 @@ models:
         description: ""
 
   - name: capacity_attendance
-    description: "attendance information"
+    description: >
+      attendance information
     columns:
       - name: home_stadium
         data_type: string
