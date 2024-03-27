@@ -180,9 +180,9 @@ models:
         data_type: string
         description: ""
 
-- name: top_scorers_assistens
+  - name: top_scorers_assistens
     description: >
-      list with top scores and assistens info
+      list with top scorers and assistants info
     columns:
       - name: player
         data_type: string
