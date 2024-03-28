@@ -1,5 +1,5 @@
 # de_zoomcamp_2024_UCL_2016-2022
-Final project for DE zoomcamp 2024
+Final project for DE Zoomcamp 2024
 
 
 # Problem description:
@@ -15,14 +15,14 @@ The goal is to create an advanced analytical model and dashboard that provide in
 By implementing this solution, sponsors can make data-driven decisions on advertising placements, while football clubs and analysts can gain valuable insights into enhancing team performance and fan experience. The project aims to bridge the gap in current sports analytics offerings, providing a comprehensive tool for a range of stakeholders in the football industry.
 
 # Technologies
-In this project I mostly used the tools that I learned from Data-Eng-zoomcamp-2024
+In this project, I mostly used the tools that I learned from Data-Eng-zoomcamp-2024
 
-1) Google Cloud Storage - datalake to store raw dataset in buckets
+1) Google Cloud Storage - data lake to store raw datasets in buckets
 2) Mage for data orchestration
 3) Terraform
 4) Google BigQuery - data warehouse.
 5) Dbt cloud - for developing Analytical Views 
-6) Looker - visualization dashboard with main metrics that will helps to find ingsights from data
+6) Looker - visualization dashboard with main metrics that will help to find insights from data
 
 ![Project](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/16_project_struct.jpg)
 
@@ -40,10 +40,10 @@ cd de_zoomcamp_2024_UCL_2016-2022
 
 ### 1) GCP 
 
-In google cloud console - create a new GCP project by clicking New Project button.
+In Google Cloud console - create a new GCP project by clicking the New Project button.
 ![New project](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/1_create_project.png)
 
-Create all resources for project - BigQuery, Cloud Storage and Service Account
+Create all resources for the project - BigQuery, Cloud Storage and Service Account
 
 [Bucket](https://console.cloud.google.com/storage/browser)
 ![bucket](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/2_bucket.png)
@@ -52,7 +52,7 @@ Create all resources for project - BigQuery, Cloud Storage and Service Account
 [IAM](https://console.cloud.google.com/iam-admin)
 ![service_account](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/3_service_acc.png)
 
-Download JSON with credentials to project folder
+Download JSON with credentials to the project folder
 
 ### 2) Mage
 
@@ -80,10 +80,10 @@ Create 6 separate pipelines with Load Transform Export
 Mage pipelines code 
 [Mage pipelines code](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/mage_pipelines.md)
 
-Add triggers to start pipelines with refresh data on monthly basis
+Add triggers to start pipelines with refresh data on a monthly basis
  ![pipeline](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/7_triggers.png)
 
-Final active pipiles in Mage 
+Final active pipelines in Mage 
 ![pipeline](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/8_mage_pipelines.png)
 
 ### 3) Terraform
@@ -121,15 +121,15 @@ terraform apply
 7) Infrastructure Oversight: 
 Leverage Terraform’s suite of commands such as ```plan```, ```apply```, ```destroy```, among others, to control and modify your infrastructure over time. For detailed command specifications and further assistance, consult the Terraform documentation to explore the full array of commands at your disposal.
 
-### 4) Google Cloud Storage/Big query
+### 4) Google Cloud Storage/Big Query
 
-After pipilines run data will be available in GCP storage
+After pipelines run data will be available in GCP storage
  ![pipeline](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/6_GCP_data.png)
 
-And need to create external tables from this parquets in buckets
+And need to create external tables from these parquets in buckets
  ![ext_tables](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/9_external_table.png)
 
- From external table create materialized view 
+ From the external table create materialized view 
 
 ```
 CREATE TABLE `UCL.teams_native`
@@ -147,13 +147,13 @@ FROM `UCL.teams_native`;
 
 ### 5) DBT cloud
 
-Go to https://www.getdbt.com/ and creates a free account. After creating your account you need to create your project following the instructions:
+Go to https://www.getdbt.com/ and create a free account. After creating your account you need to create your project following the instructions:
 
-1. Choose a name in Name your project option.
+1. Choose a name in the Name your project option.
 
 ![dbt_create](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/11_dbt_create.png)
 
-2. In Choose a connection, select BigQuery, add github connection, create dev, prod enviroments
+2. In Choose a connection, select BigQuery, add GitHub connection, create dev, and prod environments
 
 3. Run cloud IDE. Click initialize DBT project 
 
@@ -169,14 +169,14 @@ Go to https://www.getdbt.com/ and creates a free account. After creating your ac
 Final dbt schema
 
 ![dbt_schema](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/13_dbt_schema.png)
-Succesfull dbt run
+Successful dbt run
 
 ![dbt_run](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/14_dbt_run.png)
 ### 6) Looker
 
 Login to  [Looker Studio](https://lookerstudio.google.com/)
 
-Create new report, add data from BigQuery 
+Create a new report, add data from BigQuery 
 
  ![Looker](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/15_looker_final.png)
 
