@@ -9,6 +9,7 @@
 
 SELECT 
     fteams.home_stadium,
+    fteams.team_name,
     fteams.stadium_city,
     fteams.team_country,
     COUNT(fmatches.match_id) as total_matches,
@@ -18,6 +19,6 @@ FROM
 JOIN 
     {{ ref('fact_teams') }} fteams ON fmatches.home_team = fteams.team_name
 GROUP BY 
-    fteams.home_stadium, fteams.stadium_city, fteams.team_country
+    fteams.home_stadium, fteams.team_name, fteams.stadium_city, fteams.team_country
 ORDER BY 
     avg_attendance DESC, total_matches DESC
