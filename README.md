@@ -1,5 +1,5 @@
 # de_zoomcamp_2024_UCL_2016-2022
-Final project for DE Zoomcamp 2024
+The final project for DE Zoomcamp 2024
 
 
 # Problem description:
