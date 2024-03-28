@@ -87,6 +87,39 @@ Final active pipiles in Mage
 
 ### 3) Terraform
 
+1) Download terraform [download page](https://developer.hashicorp.com/terraform/install)
+2)  Add the Terraform binary to the system PATH
+3) Check version
+```
+$ terraform version
+Terraform v1.7.5
+on windows_amd64
+```
+
+4) Establish a connection with your cloud service: Set up API credentials or employ a service account key file for verification with your cloud provider.
+5) Start a Terraform project: In the command line interface, go to your Terraform project's main directory and execute the command below to initialize the project:
+
+```
+terraform init
+```
+6) Generate and Execute Change Plan: 
+
+Utilize the commands below to formulate an action plan and implement modifications to your infrastructure:
+
+This command crafts an execution blueprint that outlines the prospective changes to your infrastructure. Scrutinize this blueprint to confirm it matches your intentions.
+
+```
+terraform plan 
+```
+
+Execute this command to put the planned changes into effect. You'll need to endorse the actions by typing 'yes' when prompted to proceed.
+
+```
+terraform apply 
+```
+7) Infrastructure Oversight: 
+Leverage Terraform’s suite of commands such as ```plan```, ```apply```, ```destroy```, among others, to control and modify your infrastructure over time. For detailed command specifications and further assistance, consult the Terraform documentation to explore the full array of commands at your disposal.
+
 ### 4) Google Cloud Storage/Big query
 
 After pipilines run data will be available in GCP storage
@@ -139,4 +172,27 @@ Succesfull dbt run
 
 ![dbt_run](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/14_dbt_run.png)
 ### 6) Looker
+
+Login to  [Looker Studio](https://lookerstudio.google.com/)
+
+Create new report, add data from BigQuery 
+
+ ![Looker](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/15_looker_final.png)
+
+# Summary:
+### Stadium Attendance:
+
+The top five clubs with the highest average attendance for home matches with over 10 games played are Tottenham Hotspur, FC Barcelona, Manchester United, Real Madrid, and AS Roma. These clubs demonstrate a strong fan base, indicating lucrative opportunities for sponsors aiming to reach large audiences.
+Spain leads the list of countries by average match attendance, followed by England, Portugal, Netherlands, and Germany. This highlights Spain as a potential focal point for sponsors, given the high turnout for matches.
+### Player Performance:
+
+Cristiano Ronaldo and Robert Lewandowski are the standout players in terms of goals and assists, suggesting they are influential figures on the pitch with a significant impact on the game's outcome.
+When considering goals by nationality, the data visualization indicates a diverse range of players from various countries, showcasing the international appeal of the UEFA Champions League and the opportunity for global marketing strategies.
+Implications for Stakeholders:
+
+Sponsors can use this analysis to strategically place their advertisements in stadiums with high attendance figures and select brand ambassadors from among the top-performing players, aligning with the project's objectives to aid in data-driven decision-making.
+Football clubs and analysts can leverage these insights to strategize on increasing fan engagement and optimizing team performance, especially focusing on nurturing talents like those of the top scorers and assist providers.
+
+### Conclusion:
+The advanced analytical model and dashboard designed for this project effectively address the gap in the market for sophisticated analysis tools. The insights provided enable stakeholders to make informed decisions that can enhance brand visibility, fan experience, and ultimately, the financial success of both sponsors and football clubs within the realm of the UEFA Champions League.
 
