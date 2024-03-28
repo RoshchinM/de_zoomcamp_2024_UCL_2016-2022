@@ -24,6 +24,7 @@ In this project I mostly used the tools that I learned from Data-Eng-zoomcamp-20
 5) Dbt cloud - for developing Analytical Views 
 6) Looker - visualization dashboard with main metrics that will helps to find ingsights from data
 
+![Project](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/16_project_struct.jpg)
 
 ## Installation and Setup
 To set up the project, follow the detailed installation and configuration instructions provided below. The guide will walk you through the necessary steps, including the installation of required dependencies and the configuration of GCP services.
