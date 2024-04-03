@@ -161,11 +161,11 @@ Go to https://www.getdbt.com/ and create a free account. After creating your acc
 
 4. Plan and execute all transformations 
 
-[Transformations plan](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/dbt_cloud/README.md)
+[Transformations plan](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/dbt_cloud/README.md)
 
-[Transformations models](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/dbt_cloud)
+[Transformations models](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/tree/main/dbt_cloud)
 
-[dbt docs](https://cloud.getdbt.com/accounts/254522/develop/6118890/docs/index.html#!/source_list/staging)
+[dbt docs](https://cloud.getdbt.com/accounts/254522/develop/6217440/docs/index.html#!/overview)
 Final dbt schema
 
 ![dbt_schema](https://github.com/RoshchinM/de_zoomcamp_2024_UCL_2016-2022/blob/main/assets/13_dbt_schema.png)
